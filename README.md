@@ -1,5 +1,7 @@
 # Supported tags
-- 2.4.48-1.9.7-r0, 2.4.48, latest
+- 2.4.48-1.9.12-r0, 2.4.48, latest
+- 2.4.48-1.9.7-r0
+
 # How to use this image.
 ## to run a new container
 ```shell
@@ -18,3 +20,5 @@ htpasswd -b /etc/subversion/passwd user pass
 svnadmin create /home/svn/{REPOSITORY_NAME}
 chmod -R 777 /home/svn/{REPOSITORY_NAME}/db
 ```
+## support
+[Github](https://github.com/opticaline/svn-with-httpd)
