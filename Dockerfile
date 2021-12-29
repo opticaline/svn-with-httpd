@@ -1,10 +1,6 @@
-FROM httpd:2.4.48-alpine3.14
+FROM httpd:2.4.52-alpine3.15
 
-ARG SVN_REPO_VER=v3.7
-ARG SVN_VER=1.9.12-r0
-
-RUN echo "https://dl-cdn.alpinelinux.org/alpine/$SVN_REPO_VER/main" >> /etc/apk/repositories &&\
-    apk add --no-cache mod_dav_svn=$SVN_VER subversion-libs=$SVN_VER subversion=$SVN_VER &&\
+RUN apk add --no-cache mod_dav_svn subversion-libs subversion &&\
     mkdir /home/svn/ &&\
     mkdir /etc/subversion &&\
     touch /etc/subversion/passwd
