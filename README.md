@@ -1,5 +1,6 @@
 # Supported tags
-- 2.4.48-1.9.12-r0, 2.4.48, latest
+- 2.4.57-1.14.2-r4, 2.4.57, latest
+- 2.4.48-1.9.12-r0, 2.4.48
 - 2.4.48-1.9.7-r0
 
 # How to use this image.
