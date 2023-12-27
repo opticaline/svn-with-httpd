@@ -1,4 +1,4 @@
-FROM httpd:2.4.57-alpine3.17
+FROM httpd:2.4.58-alpine3.19
 
 RUN apk add --no-cache mod_dav_svn subversion-libs subversion &&\
     mkdir /home/svn/ &&\
